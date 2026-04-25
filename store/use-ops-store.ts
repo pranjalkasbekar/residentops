@@ -117,6 +117,7 @@ export const useOpsStore = create<OpsState>((set, get) => ({
             category: string;
             priority: ComplaintPriority;
             status: ComplaintStatus;
+            residentUid?: string;
             residentName: string;
             assignedWorkerId?: string | null;
             timeline?: string[];
@@ -153,6 +154,7 @@ export const useOpsStore = create<OpsState>((set, get) => ({
       (snap) => {
         const rows: PaymentRecord[] = snap.docs.map((d) => {
           const data = d.data() as {
+            residentUid?: string;
             residentName: string;
             amount: number;
             month: string;
