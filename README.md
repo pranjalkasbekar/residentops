@@ -1,12 +1,12 @@
-ResidentOps
+# ResidentOps
 
 <p align="center">
   Real-time platform for managing residential operations — complaints, payments, and coordination.
 </p>
 
 <p align="center">
-  <a href="https://residentops.vercel.app">Live Demo</a> ·
-  <a href="https://github.com/pranjalkasbekar/residentops">Source</a>
+  <a href="https://residentops.vercel.app"><b>Live Demo</b></a> ·
+  <a href="https://github.com/pranjalkasbekar/residentops"><b>Source</b></a>
 </p>
 
 ---
@@ -19,53 +19,55 @@ ResidentOps
 
 ---
 
-## What this is
+## Overview
 
-ResidentOps is a full-stack system that replaces fragmented workflows (WhatsApp, manual tracking) with a structured, real-time platform.
+ResidentOps replaces fragmented workflows with a structured, real-time system:
 
-It focuses on:
-- complaint lifecycle management  
-- worker assignment and tracking  
-- maintenance payment visibility  
-- real-time multi-user updates  
+<div align="center">
+
+| Complaints        | Workers            | Payments           | Real-time        |
+|------------------|-------------------|-------------------|------------------|
+| Track lifecycle  | Assign & monitor  | Maintain records  | Instant updates  |
+
+</div>
 
 ---
 
-## System Design 
+## System Design
 Client (Next.js)
 ↓
-State Layer (Zustand)
+State (Zustand)
 ↓
 Firebase (Auth + Firestore)
 ↓
-Real-time listeners → push updates to all clients
+Real-time listeners → push updates
 
 
 
-Core idea: 
-Single source of truth (Firestore) + real-time subscriptions → instant consistency across users.
+**Core idea:**  
+Single source of truth + real-time subscriptions → consistent UI across users
 
 ---
 
 ## Key Capabilities
 
 - Real-time sync using Firestore `onSnapshot`  
-- Role-based interfaces (Admin / Resident)  
-- Serverless backend with automatic scaling  
-- Modular UI system with consistent design  
+- Role-based dashboards (Admin / Resident)  
+- Serverless architecture  
+- Modular, reusable UI  
 
 ---
 
 ## Tech Stack
 
-- Next.js — https://nextjs.org  
-- Firebase — https://firebase.google.com  
-- Zustand — https://github.com/pmndrs/zustand  
-- Tailwind CSS — https://tailwindcss.com  
+- Next.js → https://nextjs.org  
+- Firebase → https://firebase.google.com  
+- Zustand → https://github.com/pmndrs/zustand  
+- Tailwind CSS → https://tailwindcss.com  
 
 ---
 
-
+## Screens
 
 <p align="center">
   <img src="./public/screenshots/landing.png" width="30%" />
@@ -75,7 +77,7 @@ Single source of truth (Firestore) + real-time subscriptions → instant consist
 
 ---
 
-
+## Run
 
 ```bash
 git clone https://github.com/pranjalkasbekar/residentops
@@ -83,23 +85,6 @@ cd residentops
 npm install
 npm run dev
 Status
-Active development — currently improving production readiness (auth protection, payments, activity feed).
-
-Why it matters
-Most projects demonstrate CRUD.
-
-This project focuses on:
-
-real-time data consistency
-
-multi-user interaction
-
-system-level design decisions
-
-
-Built to explore scalable frontend architecture with real-time backend systems.
-
-
-
+Active development — improving production readiness.
 
 
