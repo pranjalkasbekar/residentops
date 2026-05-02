@@ -67,24 +67,27 @@ Single source of truth + real-time subscriptions → consistent UI across users
 
 ---
 
-## Screens
+## Impact
 
-<p align="center">
-  <img src="./public/screenshots/landing.png" width="30%" />
-  <img src="./public/screenshots/resident.png" width="30%" />
-  <img src="./public/screenshots/admin.png" width="30%" />
-</p>
+- User-friendly interface enabling easy complaint registration and tracking  
+- Eliminates unstructured communication (e.g., WhatsApp-based complaints)  
+- Introduces accountability through tracked complaint lifecycle  
+- Ensures transparency in maintenance payments  
+- Enables real-time coordination between residents and administrators  
+- Improves operational efficiency through a unified system  
 
 ---
 
-## Run
+## Future Scope
 
-```bash
-git clone https://github.com/pranjalkasbekar/residentops
-cd residentops
-npm install
-npm run dev
-Status
+- Payment gateway integration for seamless transactions  
+- Mobile application for wider accessibility  
+- Middleware-based authentication and security enhancements  
+- AI-based complaint categorization and prioritization  
+- Advanced analytics dashboard for society insights  
+
+---
+
+## Status
+
 Active development — improving production readiness.
-
-
